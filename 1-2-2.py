@@ -6,4 +6,4 @@ def fact(n):
     else:
         return n * fact(n-1)
 print("количесвто вариантов распределения всем местам = ", str(fact(factorial)) )
-print("количесвто вариантов распределения первым 3м местам= ", (fact(factorial)/fact(fact2)))
+print("количесвто вариантов распределения первым трём местам= ", (fact(factorial)/fact(fact2)))
