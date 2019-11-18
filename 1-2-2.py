@@ -1,7 +1,9 @@
-import math
-m = int(input("введите количество команд"))
-a = (math.factorial(m))
-b = (math.factorial(m-3))
-f = a/b
-print(f"вариантов распределения команд на первые три места {f}")
-print(f"вариантов всемозможных распределенийй {a}")
+factorial = int( input("Введите количество команд ") )
+fact2 = factorial - 3
+def fact(n):
+    if n == 0: 
+        return 1
+    else:
+        return n * fact(n-1)
+print("количесвто вариантов распределения всем местам = ", str(fact(factorial)) )
+print("количесвто вариантов распределения первым 3м местам= ", (fact(factorial)/fact(fact2)))
